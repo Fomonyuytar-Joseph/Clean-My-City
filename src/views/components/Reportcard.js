@@ -3,22 +3,26 @@ import React from 'react'
 import PHONE from '../../consts/phoneDimensions'
 import COLORS from '../../consts/colors'
 
-const Reportcard = () => {
+const Reportcard = ({url,status,timestamp,date}) => {
+  // console.log("the uri",url);
   return (
     <View style={styles.ReportContainer}>
       <View style={styles.ImageContainer}>
       <Image
           style={styles.ImageStyle}
-          source={require('../../../assests/img/trash.jpg')}
+          source={{uri:url}}
         />
       </View>
       <View  style={styles.TextContainer}>
         <Text  style={styles.stateStyle}>
-        Half Full
+        {status}
         </Text>
 
         <Text  style={styles.timeStamptyle}>
-        12th Sep 2014 2:00pm
+        {timestamp}
+        </Text>
+        <Text  style={styles.timeStamptyle}>
+        {date}
         </Text>
 
       </View>
@@ -65,6 +69,7 @@ const styles =StyleSheet.create({
         ,
         timeStamptyle:{
         fontSize:14,
+        color:COLORS.black,
     }
 
 })

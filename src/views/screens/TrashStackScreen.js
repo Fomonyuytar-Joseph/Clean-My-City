@@ -16,7 +16,7 @@ const TrashStackScreen = () => {
     <Stack.Navigator
     screenOptions={({route}) => ({
         headerStyle: {
-            backgroundColor: '#000000',
+            backgroundColor: COLORS.themePrimary,
           },
 
 
@@ -40,7 +40,7 @@ const TrashStackScreen = () => {
             headerRight:props=>{
                 return( 
                   <TouchableOpacity onPress={()=>navigation.navigate("Report Trash" )}>
-                       <ReportTrashButton/>
+                       <ReportTrashButton text={"Report Trash"} icon={"bullhorn-variant-outline"}/>
                   </TouchableOpacity>
               
                 )

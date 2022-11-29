@@ -2,9 +2,9 @@ import { View, Text ,TouchableOpacity,StyleSheet} from 'react-native'
 import React from 'react'
 import COLORS from '../../consts/colors'
 
-const SubmitButton = () => {
+const SubmitButton = ({uploadReport}) => {
   return (
-    <TouchableOpacity style={styles.Button}>
+    <TouchableOpacity style={styles.Button} onPress={uploadReport}>
       <Text style={styles.ButtonText}>Submit Button</Text>
     </TouchableOpacity>
   )
@@ -13,8 +13,8 @@ const SubmitButton = () => {
 const styles =StyleSheet.create({
     Button: {
         width: '90%',
-        height: 40,
-       backgroundColor: COLORS.black,
+        height: 60,
+       backgroundColor: COLORS.themePrimary,
         borderRadius: 5,
         marginLeft: 3,
         display: 'flex',

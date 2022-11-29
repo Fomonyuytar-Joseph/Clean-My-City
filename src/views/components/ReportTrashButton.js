@@ -1,17 +1,17 @@
 import { View, Text ,StyleSheet,TouchableOpacity} from 'react-native'
 import React from 'react'
 import COLORS from '../../consts/colors'
-import Octicons from 'react-native-vector-icons/Octicons';
+import Octicons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
 
-const ReportTrashButton = ({navigation}) => {
+const ReportTrashButton = ({navigation, text ,icon}) => {
   return (
     <View style={styles.ButtonContainer} >
-      <Text style={styles.textStyle}>Report Trash</Text>
+      <Text style={[styles.textStyle,{color:COLORS.themePrimary}]}>{text}</Text>
       <Octicons
-                name={'report'}
-                color={'black'}
+                name={icon}
+                color={COLORS.themePrimary}
                 size={20}
               />
 

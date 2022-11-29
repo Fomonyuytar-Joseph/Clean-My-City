@@ -9,7 +9,9 @@ const COLORS = {
     primary:"#000000",
     green:"#d9e8dc",
     darkGreen:"#6c995c",
-    pink:"#d9baba"
+    pink:"#d9baba",
+    themeBackground:"#ecedd9",
+    themePrimary:"#026937"
 
   };
   export default COLORS;

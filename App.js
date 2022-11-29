@@ -50,7 +50,7 @@ const App = () => {
           tabBarInactiveTintColor: 'gray',
          
           tabBarStyle: {
-            backgroundColor: COLORS.black,
+            backgroundColor: COLORS.themePrimary,
             position: 'absolute',
             bottom: 10,
             left: 10,
